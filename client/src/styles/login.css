@@ -13,6 +13,10 @@ body {
     background: linear-gradient(270deg, rgba(130,202,255,1) 0%, rgba(129,145,198,1) 100%, rgba(255,255,255,1) 100%, rgba(163,177,235,1) 100%);
 }
 
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -78,7 +82,8 @@ body {
     height: 300px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
     border: none;
     border-bottom: 1px solid grey;
     margin-bottom: 15px;
@@ -89,7 +94,8 @@ input[type=text] {
     font-size: 20px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=password]:focus {
     outline:none;
 }
 
@@ -103,4 +109,18 @@ input[type=text]:focus {
     font-weight: 600;
     text-transform: uppercase;
     background: #99bfe4;
+}
+
+
+#login-btn:hover {
+    background: #a3caef;
+}
+
+.account-help-container {
+    position: relative;
+    top: 20px;
+}
+
+.account-help {
+    display: inline-block;
 }

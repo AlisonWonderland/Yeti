@@ -38,11 +38,13 @@ export class Login extends Component {
                                 <input type="text" name="Username" placeholder="Username" onChange={this.handleUsernameChange} />
                             </div>
                             <div className="form-row">
-                                <input type="text" name="Password" placeholder="Password" onChange={this.handlePasswordChange} />
+                                <input type="password" name="Password" placeholder="Password" onChange={this.handlePasswordChange} />
                             </div>
                             <input id="login-btn" type="submit" value="Login"/>
-                            <a href="#">Forgot Password?</a>
-                            <a href="#">Don't have an account? Sign up here.</a>
+                            <div className="account-help-container">
+                                <a href="#" className="account-help">Forgot Password?</a>
+                                <a href="#" className="account-help">Don't have an account? Sign up here.</a>
+                            </div>
                         </form>
                     </div>
                 </main>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
-import '../styles/login.css';
+import styles from '../styles/login.module.css';
 
 export class Login extends Component {
     constructor(props) {
@@ -17,33 +17,34 @@ export class Login extends Component {
 
     render() {
         return (
-            <div className="main-container">
+            <div className={styles["main-container"]}>
                 <header>
-                    <nav className="navbar">
-                        <span className="yeti-home">                        
-                            <img className="logo-nav" src="assets/output-onlinepngtools.png" alt="Yeti logo"/>
+                    <nav className={styles["navbar"]}>
+                        <a href="#" className={styles["yeti-home"]}>                        
+                            <img className={styles["logo-nav"]} src="assets/output-onlinepngtools.png" alt="Yeti logo"/>
+                            {/* <span className={styles["nav-item"]}><a href="#">Yeti</a></span> */}
                             Yeti
-                        </span>
-                        <ul className="nav-links">
-                            <li className="nav-item"><a href="#">Browse</a></li>
-                            <li className="nav-item"><a href="#">Sign in</a></li>
+                        </a>
+                        <ul className={styles["nav-links"]}>
+                            <li className={styles["nav-item"]}><a href="#">Browse</a></li>
+                            <li className={styles["nav-item"]}><a href="#">Sign in</a></li>
                         </ul>
                     </nav>
                 </header>
-                <main className="login-main">
-                    <div className="login-box">
-                        <img className="logo-md" src="assets/output-onlinepngtools.png" alt="Yeti logo"/>
-                        <form id="login-form" onSubmit={this.handleSubmit}>
-                            <div className="form-row">
+                <main className={styles["login-main"]}>
+                    <div className={styles["login-box"]}>
+                        <img className={styles["logo-md"]} src="assets/output-onlinepngtools.png" alt="Yeti logo"/>
+                        <form id={styles["login-form"]} onSubmit={this.handleSubmit}>
+                            <div className={styles["form-row"]}>
                                 <input type="text" name="Username" placeholder="Username" onChange={this.handleUsernameChange} />
                             </div>
-                            <div className="form-row">
+                            <div className={styles["form-row"]}>
                                 <input type="password" name="Password" placeholder="Password" onChange={this.handlePasswordChange} />
                             </div>
-                            <input id="login-btn" type="submit" value="Login"/>
-                            <div className="account-help-container">
-                                <a href="#" className="account-help">Forgot Password?</a>
-                                <a href="#" className="account-help">Don't have an account? Sign up here.</a>
+                            <input id={styles["login-btn"]} type="submit" value="Login"/>
+                            <div className={styles["account-help-container"]}>
+                                <a href="#" className={styles["account-help"]}>Forgot Password?</a>
+                                <a href="#" className={styles["account-help"]}>Don't have an account? Sign up here.</a>
                             </div>
                         </form>
                     </div>

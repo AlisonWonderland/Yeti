@@ -1,0 +1,69 @@
+.navbar {
+    font-family: inherit;
+    font-size: 20px;
+    height: 55px;
+    width: 100%;
+    background: rgba(256, 256, 256, 1);
+    border: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yeti-home {
+    padding: 0px 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 30px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0px 25px;
+}
+
+.website-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* rename then work on browse */
+.main-container {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: rgb(130,202,255);
+    background: linear-gradient(270deg, rgba(130,202,255,1) 0%, rgba(129,145,198,1) 100%, rgba(255,255,255,1) 100%, rgba(163,177,235,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    height: 100%;
+    /* overflow-y: hidden; */
+}
+
+.landingpage-image-grid {
+    display: grid;
+    width: 100%;
+    height: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

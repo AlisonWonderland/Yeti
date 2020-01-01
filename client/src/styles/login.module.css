@@ -1,26 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+.main-container {
+    /* font-family: 'Poppins', Arial, Helvetica, sans-serif; */
     line-height: 1.4;
     background: rgb(130,202,255);
     background: linear-gradient(270deg, rgba(130,202,255,1) 0%, rgba(129,145,198,1) 100%, rgba(255,255,255,1) 100%, rgba(163,177,235,1) 100%);
-}
 
-input[type=submit]:hover {
-    cursor: pointer;
-}
-
-.main-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .navbar {
@@ -34,6 +20,8 @@ input[type=submit]:hover {
 
 .yeti-home {
     padding: 0px 25px;
+    text-decoration: none;
+    color: #000000;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -50,10 +38,11 @@ input[type=submit]:hover {
 }
 
 .nav-item a {
+    padding: 0px 25px;
+    color: #000000;
     text-decoration: none;
     display: inline-block;
     font-weight: 600;
-    padding: 0px 25px;
 }
 
 .login-main {

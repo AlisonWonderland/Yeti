@@ -12,6 +12,8 @@
 
 .yeti-home {
     padding: 0px 25px;
+    text-decoration: none;
+    color: #000000;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -32,6 +34,7 @@
     display: inline-block;
     font-weight: 600;
     padding: 0px 25px;
+    color: black;
 }
 
 .website-wrapper {

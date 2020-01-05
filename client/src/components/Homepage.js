@@ -7,13 +7,14 @@ export class Homepage extends Component {
             <div className={styles["website-wrapper"]}>
                <header>
                     <nav className={styles["navbar"]}>
-                        <span className={styles["yeti-home"]}>                        
+                        <a href="/" className={styles["yeti-home"]}>                        
                             <img className={styles["logo-nav"]} src="assets/output-onlinepngtools.png" alt="Yeti logo"/>
+                            {/* <span className={styles["nav-item"]}><a href="#">Yeti</a></span> */}
                             Yeti
-                        </span>
+                        </a>
                         <ul className={styles["nav-links"]}>
-                            <li className={styles["nav-item"]}><a href="#">Browse</a></li>
-                            <li className={styles["nav-item"]}><a href="#">Sign in</a></li>
+                            <li className={styles["nav-item"]}><a href="/browse">Browse</a></li>
+                            <li className={styles["nav-item"]}><a href="/login">Sign in</a></li>
                         </ul>
                     </nav>
                 </header>

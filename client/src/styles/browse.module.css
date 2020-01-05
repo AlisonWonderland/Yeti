@@ -1,0 +1,125 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: inherit;
+    font-size: 20px;
+    height: 55px;
+    width: 100%;
+    background: rgba(256, 256, 256, 1);
+    border: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yeti-home {
+    padding: 0px 25px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 30px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0px 25px;
+    color: black;
+}
+
+/* Margin top must be the same as navbar height */
+#browse-main {
+    margin-top: 55px;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    color: white;
+    background: #000000;
+}
+
+#browse-purpose {
+    width: 100%;
+}
+
+/* maybe change to an id or add to above id later */
+.purpose-statement {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #002222;
+    background-image: url("https://i.pinimg.com/originals/ef/e4/91/efe4911c1514bd6da486c87cab240f60.gif");
+}
+
+#browse-gallery {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    /* flex-grow: 1; */
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-row {
+    /* +15px for the margin used by the .col classes below */
+    width: 95%;
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-row > img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.row > .col-xs > *,
+.row > .col-sm > *,
+.row > .col-md > *,
+.row > .col-lg > * {
+    margin: 15px;
+}
+
+/* Limit to 3 per .row */
+.col-sm {
+    height: 500px;
+    width: 300px;
+    flex-basis: 33.33333%;
+    /* background-color: orange */
+}
+
+.col-sm > img {
+    /* margin: 0px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
